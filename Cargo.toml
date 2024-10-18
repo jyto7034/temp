@@ -1,0 +1,18 @@
+[package]
+name = "login-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.7", features = [ "runtime-tokio", "tls-rustls", "sqlite" ] }
+rocket_db_pools = { version = "0.2.0", features = ["sqlx_sqlite"] }
+rocket = { version = "0.5.1", features = ["secrets", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+argon2 = "0.5.3"
+dotenv = "0.15.0"
+tokio = { version = "1.39.3", features = ["full"] }
+lazy_static = "1.5.0"
+structopt = "=0.3.26"
+rand = "0.8.5"
+hex = "0.4.3"
+parking_lot = "0.12.3"

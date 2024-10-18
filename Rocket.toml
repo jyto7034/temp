@@ -1,0 +1,5 @@
+[default.databases.sqlite_database]
+url = "sqlite:database.db"
+
+[default]
+secret_key = "MeYboQNtndqyaXKCCCZIKh3Eb7/5+Huujd8xoV70FJQ="
